@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap");
+.tagesschrift-regular {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  /* padding: 20px;
+  font-weight: bold; */
+  font-family: "tagesschrift";
+  background: #000000; /* fallback for old browsers */
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg fill-opacity='0.85'%3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+.pageHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 20pt;
+}
+@keyframes slidein {
+  from {
+    transform: scale(0.5) translateX(-200%);
+  }
+  to {
+    transform: scale(1) translateX(0);
+  }
+}
+.headerAboutme {
+  max-width: 1000px;
+  padding: 2px;
+  position: relative;
+  padding: 20px;
+}
+.headerAboutme .socials {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  left: 10px;
+  bottom: 10px;
+}
+.socials img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s;
+}
+.socials img:hover {
+  transform: scale(1.4);
+}
+.headerimg img {
+  max-width: 400px;
+  max-height: 400px;
+  /* border-radius: 30%; */
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  animation: slidein 1.5s 1;
+}
+.myWorkContainer {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myWorkContainer h2 {
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 15vh;
+}
+.projectsContainer div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  background-color: #330055;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%233a015d' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23410165' cx='50' cy='100' r='50'/%3E%3Cg fill='%2348026e' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23500376' cx='50' cy='200' r='50'/%3E%3Cg fill='%2357047e' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f0587' cx='50' cy='300' r='50'/%3E%3Cg fill='%2367068f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%236f0798' cx='50' cy='400' r='50'/%3E%3Cg fill='%237707a0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%238008a9' cx='50' cy='500' r='50'/%3E%3Cg fill='%238909b1' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%239109ba' cx='50' cy='600' r='50'/%3E%3Cg fill='%239a09c3' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a309cb' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ad09d4' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b608dc' cx='50' cy='800' r='50'/%3E%3Cg fill='%23c007e5' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c905ee' cx='50' cy='900' r='50'/%3E%3Cg fill='%23d303f6' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23D0F' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  box-shadow: 5px 5px 5px 5px #a044ff;
+}
+.projectsContainer div:hover {
+  animation: breath 0.6s 1;
+  transform: scale(1.2);
+}
+@keyframes breath {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+.projectsContainer div img {
+  height: 50%;
+  width: 100%;
+}
+.projectsContainer div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projectsContainer div i {
+  font-size: 1.5rem;
+}
+.footerDiv {
+  /* background-color: #ff7700;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; */
+  background: #6a3093; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a044ff,
+    #6a3093
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a044ff,
+    #6a3093
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 20px;
+}
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contactInfo h2 {
+  font-size: 30pt;
+}
+.contactInfo img {
+  max-width: 25px;
+  max-height: 25px;
+}
+.contactInfo i {
+  max-width: 25px;
+  max-height: 25px;
+}
+.footerImg img {
+  border-radius: 30%;
+}
+.contactInfo div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+}
+.contactInfo a {
+  text-decoration: none;
+  color: white;
+}
